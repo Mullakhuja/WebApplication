@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -48,7 +49,7 @@ namespace WAD.WebApp._8143.Controllers
         // GET: Employees/Create
         public IActionResult Create()
         {
-            ViewData["BranchId"] = new SelectList(_context.Branch, "Id", "Id");
+            ViewData["BranchId"] = new SelectList(_context.Branch, "Id", "Name");
             return View();
         }
 
@@ -57,15 +58,25 @@ namespace WAD.WebApp._8143.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("EmployeeId,FirstName,LastName,Birthday,Gender,Salary,Email,EmpPhotoBinary,IsFullTime,BranchId")] Employee employee)
+        public async Task<IActionResult> Create([Bind("EmployeeId,FirstName,LastName,Birthday,Gender,Salary,Email,EmpPhoto,IsFullTime,BranchId")] Employee employee)
         {
             if (ModelState.IsValid)
             {
+                byte[] photoBytes = null;
+                if (employee.EmpPhoto != null)
+                {
+                    using (var memory = new MemoryStream())
+                    {
+                        employee.EmpPhoto.CopyTo(memory);
+                        photoBytes = memory.ToArray();
+                    }
+                }
+                employee.EmpPhotoBinary = photoBytes;
                 _context.Add(employee);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["BranchId"] = new SelectList(_context.Branch, "Id", "Id", employee.BranchId);
+            ViewData["BranchId"] = new SelectList(_context.Branch, "Id", "Name", employee.BranchId);
             return View(employee);
         }
 
@@ -82,7 +93,7 @@ namespace WAD.WebApp._8143.Controllers
             {
                 return NotFound();
             }
-            ViewData["BranchId"] = new SelectList(_context.Branch, "Id", "Id", employee.BranchId);
+            ViewData["BranchId"] = new SelectList(_context.Branch, "Id", "Name", employee.BranchId);
             return View(employee);
         }
 
@@ -91,7 +102,7 @@ namespace WAD.WebApp._8143.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("EmployeeId,FirstName,LastName,Birthday,Gender,Salary,Email,EmpPhotoBinary,IsFullTime,BranchId")] Employee employee)
+        public async Task<IActionResult> Edit(int id, [Bind("EmployeeId,FirstName,LastName,Birthday,Gender,Salary,Email,EmpPhotoBinary,EmpPhoto,IsFullTime,BranchId")] Employee employee)
         {
             if (id != employee.EmployeeId)
             {
@@ -102,6 +113,20 @@ namespace WAD.WebApp._8143.Controllers
             {
                 try
                 {
+                    byte[] photoBytes = null;
+                    if (employee.EmpPhoto != null)
+                    {
+                        using (var memory = new MemoryStream())
+                        {
+                            employee.EmpPhoto.CopyTo(memory);
+                            photoBytes = memory.ToArray();
+                        }
+                    }
+                    else
+                    {
+                        photoBytes = employee.EmpPhotoBinary;
+                    }
+                    employee.EmpPhotoBinary = photoBytes;
                     _context.Update(employee);
                     await _context.SaveChangesAsync();
                 }
@@ -118,7 +143,7 @@ namespace WAD.WebApp._8143.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["BranchId"] = new SelectList(_context.Branch, "Id", "Id", employee.BranchId);
+            ViewData["BranchId"] = new SelectList(_context.Branch, "Id", "Name", employee.BranchId);
             return View(employee);
         }
 
@@ -155,6 +180,23 @@ namespace WAD.WebApp._8143.Controllers
         private bool EmployeeExists(int id)
         {
             return _context.Employee.Any(e => e.EmployeeId == id);
+        }
+
+        public async Task<IActionResult> ShowImage(int? id)
+        {
+            if (id.HasValue)
+            {
+                var employee = await _context.Employee.FindAsync(id);
+                if (employee?.EmpPhotoBinary != null)
+                {
+                    return File(
+                        employee.EmpPhotoBinary,
+                        "image/jpeg",
+                        $"emp_{id}.jpg");
+                }
+            }
+
+            return NotFound();
         }
     }
 }

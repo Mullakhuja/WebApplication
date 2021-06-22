@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "pPCrbPLTk8rHuEqfhX673xdUnfzILuMMXhRLXSgSQOgLng1Sw6O8r1gc8Wa4jPVC9vi0xKeys5qxk5p8zJciMA==",
+  "dgSpecHash": "jTmZOyA0dlqPM/IcrN1RVHl14Utdh1YC3LY8DF45V5WWJD6G+TJ65BUJHExgN3oXRSyscGHB7Ye11VzVyQA9/g==",
   "success": true,
-  "projectFilePath": "D:\\9sem\\wad\\WebApplication\\WAD.WebApp.8143\\WebApp.DAL\\WebApp.DAL.csproj",
+  "projectFilePath": "d:\\9sem\\wad\\WebApplication\\WAD.WebApp.8143\\WebApp.DAL\\WebApp.DAL.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.1.1\\microsoft.aspnetcore.http.features.2.1.1.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.entityframeworkcore\\2.1.1\\microsoft.entityframeworkcore.2.1.1.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\2.1.1\\microsoft.entityframeworkcore.abstractions.2.1.1.nupkg.sha512",

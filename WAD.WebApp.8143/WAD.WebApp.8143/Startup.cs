@@ -36,13 +36,15 @@ namespace WAD.WebApp._8143
             services.AddSingleton(Configuration);
             services.AddScoped<IRepository<Employee>, EmployeeRepo>();
             services.AddScoped<IRepository<Branch>, BranchRepo>();
+
+
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            
             services.AddDbContext<PaperCompDbContext>(
                 options => options.UseSqlServer(
                     Configuration.GetConnectionString("PaperComp8143")
                     )
                 );
-
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

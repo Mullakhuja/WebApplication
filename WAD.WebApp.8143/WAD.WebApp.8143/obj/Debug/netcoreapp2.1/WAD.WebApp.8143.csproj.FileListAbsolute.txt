@@ -40,3 +40,8 @@ D:\9sem\wad\WebApplication\WAD.WebApp.8143\WAD.WebApp.8143\obj\Debug\netcoreapp2
 D:\9sem\wad\WebApplication\WAD.WebApp.8143\WAD.WebApp.8143\obj\Debug\netcoreapp2.1\Razor\Views\Branches\Details.cshtml.g.cs
 D:\9sem\wad\WebApplication\WAD.WebApp.8143\WAD.WebApp.8143\obj\Debug\netcoreapp2.1\Razor\Views\Branches\Edit.cshtml.g.cs
 D:\9sem\wad\WebApplication\WAD.WebApp.8143\WAD.WebApp.8143\obj\Debug\netcoreapp2.1\Razor\Views\Branches\Index.cshtml.g.cs
+D:\9sem\wad\WebApplication\WAD.WebApp.8143\WAD.WebApp.8143\obj\Debug\netcoreapp2.1\Razor\Views\Employees\Create.cshtml.g.cs
+D:\9sem\wad\WebApplication\WAD.WebApp.8143\WAD.WebApp.8143\obj\Debug\netcoreapp2.1\Razor\Views\Employees\Delete.cshtml.g.cs
+D:\9sem\wad\WebApplication\WAD.WebApp.8143\WAD.WebApp.8143\obj\Debug\netcoreapp2.1\Razor\Views\Employees\Details.cshtml.g.cs
+D:\9sem\wad\WebApplication\WAD.WebApp.8143\WAD.WebApp.8143\obj\Debug\netcoreapp2.1\Razor\Views\Employees\Edit.cshtml.g.cs
+D:\9sem\wad\WebApplication\WAD.WebApp.8143\WAD.WebApp.8143\obj\Debug\netcoreapp2.1\Razor\Views\Employees\Index.cshtml.g.cs

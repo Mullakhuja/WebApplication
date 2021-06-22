@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\9sem\\wad\\WebApplication\\WAD.WebApp.8143\\WebApp.DAL\\WebApp.DAL.csproj": {}
+    "d:\\9sem\\wad\\WebApplication\\WAD.WebApp.8143\\WebApp.DAL\\WebApp.DAL.csproj": {}
   },
   "projects": {
-    "D:\\9sem\\wad\\WebApplication\\WAD.WebApp.8143\\WebApp.DAL\\WebApp.DAL.csproj": {
+    "d:\\9sem\\wad\\WebApplication\\WAD.WebApp.8143\\WebApp.DAL\\WebApp.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\9sem\\wad\\WebApplication\\WAD.WebApp.8143\\WebApp.DAL\\WebApp.DAL.csproj",
+        "projectUniqueName": "d:\\9sem\\wad\\WebApplication\\WAD.WebApp.8143\\WebApp.DAL\\WebApp.DAL.csproj",
         "projectName": "WebApp.DAL",
-        "projectPath": "D:\\9sem\\wad\\WebApplication\\WAD.WebApp.8143\\WebApp.DAL\\WebApp.DAL.csproj",
+        "projectPath": "d:\\9sem\\wad\\WebApplication\\WAD.WebApp.8143\\WebApp.DAL\\WebApp.DAL.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "D:\\9sem\\wad\\WebApplication\\WAD.WebApp.8143\\WebApp.DAL\\obj\\",
+        "outputPath": "d:\\9sem\\wad\\WebApplication\\WAD.WebApp.8143\\WebApp.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,10 @@
         "netcoreapp2.1": {
           "targetAlias": "netcoreapp2.1",
           "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[2.1.1, )"

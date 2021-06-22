@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace WebApp.DAL.DBO
@@ -33,7 +35,13 @@ namespace WebApp.DAL.DBO
         [Required]
         public string Email { get; set; }
 
+        [Display(Name = "Employee Photo")]
         public byte[] EmpPhotoBinary { get; set; }
+
+        [Display(Name = "Photo")]
+        [DataType(DataType.Upload)]
+        [NotMapped]
+        public IFormFile EmpPhoto { get; set; }
 
         public bool IsFullTime { get; set; }
 

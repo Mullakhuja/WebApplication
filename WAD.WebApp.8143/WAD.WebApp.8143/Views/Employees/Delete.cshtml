@@ -51,7 +51,7 @@
             @Html.DisplayNameFor(model => model.EmpPhotoBinary)
         </dt>
         <dd>
-            @Html.DisplayFor(model => model.EmpPhotoBinary)
+            <img src="@Url.Action("ShowImage", new {id= Model.EmployeeId})" width="200" />
         </dd>
         <dt>
             @Html.DisplayNameFor(model => model.IsFullTime)

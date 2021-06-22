@@ -64,13 +64,13 @@
                 @Html.DisplayFor(modelItem => item.Email)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.EmpPhotoBinary)
+                <img src="@Url.Action("ShowImage", new {id= item.EmployeeId})" width="200" />
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.IsFullTime)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Branch.Id)
+                @Html.DisplayFor(modelItem => item.Branch.Name)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.EmployeeId">Edit</a> |
