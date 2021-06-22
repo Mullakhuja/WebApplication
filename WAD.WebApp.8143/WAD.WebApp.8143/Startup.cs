@@ -2,12 +2,14 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WebApp.DAL;
 
 namespace WAD.WebApp._8143
 {
@@ -29,7 +31,11 @@ namespace WAD.WebApp._8143
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
-
+            services.AddDbContext<PaperCompDbContext>(
+                options => options.UseSqlServer(
+                    Configuration.GetConnectionString("PaperComp8143")
+                    )
+                );
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }

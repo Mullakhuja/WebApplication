@@ -1,0 +1,12 @@
+D:\9sem\wad\WebApplication\WAD.WebApp.8143\WebApp.DAL\bin\Debug\netcoreapp2.1\WebApp.DAL.deps.json
+D:\9sem\wad\WebApplication\WAD.WebApp.8143\WebApp.DAL\bin\Debug\netcoreapp2.1\WebApp.DAL.dll
+D:\9sem\wad\WebApplication\WAD.WebApp.8143\WebApp.DAL\bin\Debug\netcoreapp2.1\WebApp.DAL.pdb
+D:\9sem\wad\WebApplication\WAD.WebApp.8143\WebApp.DAL\obj\Debug\netcoreapp2.1\WebApp.DAL.csprojAssemblyReference.cache
+D:\9sem\wad\WebApplication\WAD.WebApp.8143\WebApp.DAL\obj\Debug\netcoreapp2.1\WebApp.DAL.AssemblyInfoInputs.cache
+D:\9sem\wad\WebApplication\WAD.WebApp.8143\WebApp.DAL\obj\Debug\netcoreapp2.1\WebApp.DAL.AssemblyInfo.cs
+D:\9sem\wad\WebApplication\WAD.WebApp.8143\WebApp.DAL\obj\Debug\netcoreapp2.1\WebApp.DAL.csproj.CoreCompileInputs.cache
+D:\9sem\wad\WebApplication\WAD.WebApp.8143\WebApp.DAL\obj\Debug\netcoreapp2.1\WebApp.DAL.dll
+D:\9sem\wad\WebApplication\WAD.WebApp.8143\WebApp.DAL\obj\Debug\netcoreapp2.1\WebApp.DAL.pdb
+D:\9sem\wad\WebApplication\WAD.WebApp.8143\WebApp.DAL\bin\Debug\netcoreapp2.1\WebApp.DAL.runtimeconfig.json
+D:\9sem\wad\WebApplication\WAD.WebApp.8143\WebApp.DAL\bin\Debug\netcoreapp2.1\WebApp.DAL.runtimeconfig.dev.json
+D:\9sem\wad\WebApplication\WAD.WebApp.8143\WebApp.DAL\obj\Debug\netcoreapp2.1\WebApp.DAL.genruntimeconfig.cache

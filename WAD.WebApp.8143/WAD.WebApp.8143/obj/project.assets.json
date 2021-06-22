@@ -4333,6 +4333,21 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "WebApp.DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "2.1.1",
+          "Microsoft.EntityFrameworkCore.Relational": "2.1.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.1.1"
+        },
+        "compile": {
+          "bin/placeholder/WebApp.DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebApp.DAL.dll": {}
+        }
       }
     }
   },
@@ -11870,13 +11885,21 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "WebApp.DAL/1.0.0": {
+      "type": "project",
+      "path": "../WebApp.DAL/WebApp.DAL.csproj",
+      "msbuildProject": "../WebApp.DAL/WebApp.DAL.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
-      "Microsoft.NETCore.App >= 2.1.0"
+      "Microsoft.EntityFrameworkCore.SqlServer >= 2.1.1",
+      "Microsoft.EntityFrameworkCore.Tools >= 2.1.1",
+      "Microsoft.NETCore.App >= 2.1.0",
+      "WebApp.DAL >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -11905,7 +11928,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "targetAlias": "netcoreapp2.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\9sem\\wad\\WebApplication\\WAD.WebApp.8143\\WebApp.DAL\\WebApp.DAL.csproj": {
+              "projectPath": "D:\\9sem\\wad\\WebApplication\\WAD.WebApp.8143\\WebApp.DAL\\WebApp.DAL.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -11928,6 +11955,16 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.2, )"
+          },
+          "Microsoft.EntityFrameworkCore.SqlServer": {
+            "target": "Package",
+            "version": "[2.1.1, )"
+          },
+          "Microsoft.EntityFrameworkCore.Tools": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[2.1.1, )"
           },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
