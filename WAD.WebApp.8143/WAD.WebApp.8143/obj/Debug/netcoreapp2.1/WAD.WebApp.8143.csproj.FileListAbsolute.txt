@@ -35,3 +35,8 @@ D:\9sem\wad\WebApplication\WAD.WebApp.8143\WAD.WebApp.8143\obj\Debug\netcoreapp2
 D:\9sem\wad\WebApplication\WAD.WebApp.8143\WAD.WebApp.8143\obj\Debug\netcoreapp2.1\WAD.WebApp.8143.dll
 D:\9sem\wad\WebApplication\WAD.WebApp.8143\WAD.WebApp.8143\obj\Debug\netcoreapp2.1\WAD.WebApp.8143.pdb
 D:\9sem\wad\WebApplication\WAD.WebApp.8143\WAD.WebApp.8143\obj\Debug\netcoreapp2.1\WAD.WebApp.8143.genruntimeconfig.cache
+D:\9sem\wad\WebApplication\WAD.WebApp.8143\WAD.WebApp.8143\obj\Debug\netcoreapp2.1\Razor\Views\Branches\Create.cshtml.g.cs
+D:\9sem\wad\WebApplication\WAD.WebApp.8143\WAD.WebApp.8143\obj\Debug\netcoreapp2.1\Razor\Views\Branches\Delete.cshtml.g.cs
+D:\9sem\wad\WebApplication\WAD.WebApp.8143\WAD.WebApp.8143\obj\Debug\netcoreapp2.1\Razor\Views\Branches\Details.cshtml.g.cs
+D:\9sem\wad\WebApplication\WAD.WebApp.8143\WAD.WebApp.8143\obj\Debug\netcoreapp2.1\Razor\Views\Branches\Edit.cshtml.g.cs
+D:\9sem\wad\WebApplication\WAD.WebApp.8143\WAD.WebApp.8143\obj\Debug\netcoreapp2.1\Razor\Views\Branches\Index.cshtml.g.cs

@@ -10,6 +10,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using WebApp.DAL;
+using WebApp.DAL.DBO;
+using WebApp.DAL.Repository;
 
 namespace WAD.WebApp._8143
 {
@@ -31,6 +33,9 @@ namespace WAD.WebApp._8143
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
+            services.AddSingleton(Configuration);
+            services.AddScoped<IRepository<Employee>, EmployeeRepo>();
+            services.AddScoped<IRepository<Branch>, BranchRepo>();
             services.AddDbContext<PaperCompDbContext>(
                 options => options.UseSqlServer(
                     Configuration.GetConnectionString("PaperComp8143")
